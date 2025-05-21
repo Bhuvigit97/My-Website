@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsene Technologies - Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary-color: #008000;
+            --secondary-color: #FFD700;
+            --text-color: #000000;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .navbar a.nav-link {
+            color: #FFD700 !important;
+            font-weight: bold;
+        }
+
+        .navbar a.nav-link:hover {
+            color: black !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: var(--secondary-color);
+        }
+
+        .hero {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 80px 0;
+        }
+
+        .hero h1,
+        .hero p {
+            color: var(--text-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .footer a {
+            color: var(--secondary-color);
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer p {
+            color: var(--secondary-color) !important;
+            font-weight: bold;
+        }
+
+        .section-header {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .section-header h2,
+        .section-header h3 {
+            color: var(--primary-color);
+        }
+
+        .list-unstyled li {
+            color: var(--primary-color);
+        }
+
+        .card-body i {
+            color: var(--primary-color);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Disable zoom on specific cards */
+        .card.no-zoom:hover {
+            transform: none !important;
+        }
+
+        .form-control {
+            border-color: var(--secondary-color);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.25);
+        }
+
+        .carousel-full-width {
+            width: 100vw;
+        }
+
+        .carousel-inner img {
+            width: 100vw;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        body,
+        p,
+        li,
+        span,
+        div,
+        a,
+        .card-text {
+            color: black !important;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <span class="navbar-brand">
+                <img src="./images/circle logo.png" alt="Arsene Technologies Logo" width="60" height="60">
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="services" class="py-3 bg-light">
+        <div class="container text-center">
+            <h2 class="section-header">Our Core Services</h2>
+            <p class="lead">At Arsene, we deliver transformative services that harness innovation, data, and technology
+                to create smarter industries.</p>
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/instrumentation.jpg" class="card-img-top" alt="Oil & Gas Instrumentation" />
+                        <div class="card-body">
+                            <i class="fas fa-industry fa-3x mb-3"></i>
+                            <h4 class="card-title">Hexagon's SmartPlant & Aveva's Applications specilized for Oil & Gas
+                            </h4>
+                            <p class="card-text">Precision-focused solutions for instrumentation, control systems, and
+                                automation in oil & gas operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 (No Zoom) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow no-zoom" data-aos="flip-up" data-aos-delay="200">
+                        <img src="./images/pexels-mikhail-nilov-9304917.jpg" class="card-img-top"
+                            alt="Data Management" />
+                        <div class="card-body">
+                            <i class="fas fa-database fa-3x mb-3"></i>
+                            <h4 class="card-title">Data Management & Integration</h4>
+                            <p class="card-text">Ensure reliable, secure, and optimized data workflows through effective
+                                system integration and governance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow" data-aos="slide-up" data-aos-delay="300">
+                        <img src="./images/pexels-thirdman-7653999.jpg" class="card-img-top" alt="Training Program" />
+                        <div class="card-body">
+                            <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                            <h4 class="card-title">Professional Training & Development Programs</h4>
+                            <p class="card-text">Equip professionals with skills in digital tools, engineering systems,
+                                and innovation leadership.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow" data-aos="fade-up">
+                        <img src="./images/pexels-thisisengineering-3861972.jpg" class="card-img-top"
+                            alt="Digital Twin" />
+                        <div class="card-body">
+                            <i class="fas fa-project-diagram fa-3x mb-3"></i>
+                            <h4 class="card-title">Smart Digital Solutions</h4>
+                            <p class="card-text">Empowering innovation through intelligent engineering, digital twins,
+                                and data-driven technologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow" data-aos="fade-right" data-aos-delay="100">
+                        <img src="./images/79-65f00b7c52a8c.png" class="card-img-top" alt="AR VR Tech" />
+                        <div class="card-body">
+                            <i class="fas fa-vr-cardboard fa-3x mb-3"></i>
+                            <h4 class="card-title">AR/VR & Immersive Technologies</h4>
+                            <p class="card-text">Enhance learning, simulation, and user experiences with augmented and
+                                virtual reality solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 (No Zoom) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow no-zoom" data-aos="flip-left" data-aos-delay="100">
+                        <img src="./images/1713972514962.png" class="card-img-top" alt="Space Tech" />
+                        <div class="card-body">
+                            <i class="fas fa-satellite fa-3x mb-3"></i>
+                            <h4 class="card-title">Space Technology & Innovation</h4>
+                            <p class="card-text">Empowering future-ready solutions through research, simulation, and
+                                data applications in space tech.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center py-3">
+        <p>&copy; 2025 Arsene Technology Services, All Rights Reserved.</p>
+        <p><b>Address:</b> 111, K.K Street, Cuddalore, Tamilnadu, 607301</p>
+        <p><b>Phone:</b> +91 7339359347</p>
+        <p><b>Email:</b> sales@arsenetechnology.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

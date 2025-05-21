@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arsene Technologies - Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary-color: #008000;
+            /* Leaf Green */
+            --secondary-color: #FFD700;
+            /* Lemon Yellow */
+            --text-color: #000000;
+            /* Black */
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        .navbar a.nav-link {
+            color: #FFD700 !important;
+            /* Lemon Yellow */
+            font-weight: bold;
+        }
+
+        .navbar a.nav-link:hover {
+            color: black !important;
+            /* Leaf Green on hover */
+        }
+
+        .section-header {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: var(--secondary-color);
+            /* Lemon Yellow */
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer p {
+            color: var(--secondary-color) !important;
+            font-weight: bold;
+        }
+
+        .company-section {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        .company-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .course-item {
+            margin-bottom: 30px;
+        }
+
+        .course-item h5 {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .course-item p {
+            font-size: 1rem;
+        }
+
+        .list-group-item {
+            border: none;
+            background-color: transparent;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <span class="navbar-brand">
+                <img src="./images/circle logo.png" alt="Arsene Technologies Logo" width="60" height="60" />
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Section - Tab Layout -->
+    <div class="container company-section">
+        <h2 class="section-header text-center">Courses Offered</h2>
+
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="courseTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-success" id="hexagon-tab" data-bs-toggle="tab"
+                    data-bs-target="#hexagon" type="button" role="tab">
+                    Hexagon Smart Applications
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-success" id="aveva-tab" data-bs-toggle="tab" data-bs-target="#aveva"
+                    type="button" role="tab">
+                    Aveva Applications
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="courseTabsContent">
+            <!-- Hexagon Tab -->
+            <div class="tab-pane fade show active" id="hexagon" role="tabpanel" aria-labelledby="hexagon-tab">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Instrumentation (SPI/SI)</h5>
+                                <p class="card-text">
+                                    Learn the fundamentals and applications of Smart Instrumentation in
+                                    modern industrial setups.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Smart Plant Piping and Instrumentation Diagram (SPPID)
+                                </h5>
+                                <p class="card-text">
+                                    Hands-on P&ID design using SmartPlant tools for piping and instrumentation
+                                    excellence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Plant Electrical (SPEL)</h5>
+                                <p class="card-text">
+                                    Master electrical design and integration with the SmartPlant Electrical
+                                    suite.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aveva Tab -->
+            <div class="tab-pane fade" id="aveva" role="tabpanel" aria-labelledby="aveva-tab">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Aveva Instrumentation</h5>
+                                <p class="card-text">
+                                    Master Aveva Instrumentation to improve industrial instrumentation workflows
+                                    and project accuracy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Aveva Electrical</h5>
+                                <p class="card-text">
+                                    Design and manage complex electrical systems using Aveva’s powerful tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Aveva P&ID</h5>
+                                <p class="card-text">
+                                    Create and manage professional-grade piping and instrumentation diagrams
+                                    efficiently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-3">
+        <p>&copy; 2025 Arsene Technology Services, All Rights Reserved.</p>
+        <p><b>Address:</b> 111, K.K Street, Cuddalore, Tamilnadu, 607301</p>
+        <p><b>Phone:</b> +91 7339359347</p>
+        <p><b>Email:</b> sales@arsenetechnology.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
